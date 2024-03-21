@@ -10,13 +10,36 @@
   <link rel="stylesheet" type="text/css" href="styles/starter.css">
   <link rel="stylesheet" type="text/css" href="styles/assignment_two.css">
   <link rel="stylesheet" type="text/css" href="lab_three.css">
+  <script defer src="javascript/java.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <title>Responsive CSS Layout</title>
 </head>
 <body>
-  <div class="header-container">
-    <h1>Lab 3</h1>
-    <h2>Incorporating Media on a Website </h2>
-  </div>
+    <section class="hero-container">
+        <div class="hero-image">
+        <img class="hero" src="assets/stuffedanimals.jpg" alt="stuffed animals">
+          <div class="hero-text">
+            <h1> Cuddly Critters Corner </h1>
+            <h1></h1>
+            <h1>  </h1>
+            <p>Plush Pals for Every Adventure</p>
+          </div>
+        </div>
+        </section>
+      
+        <section id="content-container">
+          <div class="content">
+            <img src="assets/trioanimals.jpg" alt="3 animals" class="left-image">
+            <div class="text">
+              <h1>The Cuddly Bundle Family!</h1>
+              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ducimus illum ad eius, reprehenderit delectus deserunt eaque! Quae facilis dolorum enim magnam. Accusamus exercitationem, distinctio maiores sint alias beatae adipisci. </p>
+            <button class="button">Shop now!</button>
+          </div>
+        </section>
+
   <section class="container">
     <ul class="card-container">
       <li class="card">
@@ -61,7 +84,24 @@
           </p>
         </div>
       </li>
-     
+      <section class="accordion-container">
+        <div class="accordion">
+          <h1>Fun Stuffed Animals </h1>
+          <button class="accordion">Sea Animals</button>
+          <div class="panel">
+          <p> Fishy fish, swim swim, water.</p>
+          </div>
+          <button class="accordion">Forest Animals</button>
+          <div class="panel">
+          <p> And she was a fairy...</p>
+          </div>
+          <button class="accordion">Flying Animals </button>
+          <div class="panel">
+          <p> They ain't falling, they be flying. </p>
+          </div>
+        </div>
+      </section>
+
       <li class="card">
         <div class="video-container">
           <iframe width="300" height="400"
@@ -83,6 +123,32 @@
           </p>
         </div>
       </li>
+
+      <section id="Contact">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Links</h4>
+                <ul>
+                  <li><a href>Home</a></li>
+                  <li><a href>About Us</a></li>
+                  <li><a href>Shop</a></li>
+                  <li><a href>Contact Us</a></li>
+                </ul>
+            </div>
+             <div class="footer-col">
+              <h4>Map</h4>
+             <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321200.7124268183!2d-114.41749076720954!3d51.027591530006816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1709834848709!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+         </div>
+        <section>
+            <section>
+                <div class="footer-bottom">
+                  <footer>
+                    <p>&copy; <span id="copyrightYear"></span> wesitename.</p>
+                  </footer>
+                </div>
+              </section>
     </ul>
   </section>
 </body>
