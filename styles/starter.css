@@ -303,7 +303,7 @@ font-style: normal;
 }
 
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -324,11 +324,6 @@ font-style: normal;
 }
 
 
-
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .footer-col ul li a {
   font-size: 20px;
   text-transform: capitalize;
@@ -336,6 +331,7 @@ font-style: normal;
   text-decoration: none;
   font-weight: 300;
   transition: all 0.3s ease;
+  padding: 18px;
 }
 
 .footer-col ul li a:hover {
