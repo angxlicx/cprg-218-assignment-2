@@ -1,3 +1,4 @@
+//accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -12,6 +13,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//footer copyright
 window.onload = function() {
     var currentYear = new Date().getFullYear();
     var copyrightYearSpan = document.getElementById("copyrightYear");
