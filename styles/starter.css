@@ -1,94 +1,34 @@
-
-
-  .card {
-    background-color: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-    width: 24rem;
-  }
-  
-  img {
-    border-bottom: 0.25rem solid rgb(145, 130, 180);
-    border-radius: 0.25rem 0.25rem 0 0;
-    height: auto;
-    width: 100%;
-  }
-  
-  @media screen and (min-width: 768px) {
-    img {
-      min-height: 15.5rem;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    img {
-      min-height: 16.375rem;
-    }
-  }
-  
-  .card-content {
-    padding: 1rem;
-  }
-  
-  .header,
-  .subheader {
-    margin: 0;
-  }
-
- 
-  .card-container { 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-wrap: balance;
-    row-gap: 20px;
-    column-gap: 20px;
-    }
-  
-    @media (max-width: 768px) {
-        .card {
-          flex: 1 0 calc(100% - 20px);
-        }
-      }
-     
-      @media (min-width: 768px) {
-        .card {
-          flex: 1 0 calc(50% - 20px); /
-        }
-      }
-     
-      @media (min-width: 1200px) {
-        .card {
-          flex: 1 0 calc(33% - 20px);
-        }
-      }
-
-
-
-
 /*hero*/
-.hero-container {
-    color:rgb(139, 118, 144);
-    height: 100vh;
-    position: relative;
-  }
-  
-  body, html {
-    height: 100%;
-  }
-  
-  .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("stuffedanimals.jpg");
-  height: 50%;
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
   top: 0;
-  bottom: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  left: 0;
+}
+
+.hero-container {
+  color:rgb(139, 118, 144);
+  height: 100vh;
+  position: relative; 
+
+  padding: 20px; 
+  box-sizing: border-box;
+}
   
-  }
-  
-  .hero-text {
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.hero-text {
   font-family: "Madimi One", sans-serif;   
   font-weight: 400;   
   font-style: normal;
@@ -97,116 +37,192 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #381e3d;
-  }
-  
-  .hero {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+  color: #2c1c30;
+  font-size: 30px;
   }
 
-  /*content*/
-#content-container {
-    background-color: #e7e3d8;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .text {
-    flex: 1;
-    padding: 0 20px;
-    margin: 0 20px;
-    align-items: center;
-  }
-  
-  .content {
-    font-family: "Madimi One", sans-serif;   
-  font-weight: 400;   
+
+ /*content*/
+ #content-container {
+  background-color: #e7e3d8;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-text {
+  flex: 1; 
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.content {
+  font-family: "Madimi One", sans-serif;   
+font-weight: 400;   
+font-style: normal;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content img{
+  height: 40%;
+  width: 40%; 
+  align-self: flex-start;
+  margin: 20px 20px;
+  box-sizing: border-box;
+  margin-left: -10px;
+}
+
+
+.about-text h1 {
+  color: #6a318b;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 300;
   font-style: normal;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .content img {
-    height: 50%;
-    width:50%;
-    margin: 20px 20px;
-  }
-  
-  .text p {
-    letter-spacing: 1px;
-    line-height: 20px;
-    font-size: medium;
-    margin-bottom: 45px;
-  
-  }
-  
-  .text h1 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-  }
+}
 
-  /*accordion*/
+.about-text p {
+  color: rgba(45, 22, 61, 0.8);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-family: "Albert Sans", serif;
+}
 
-.accordion {
-    font-family: "Madimi One", sans-serif;   
-  font-weight: 400;   
-  font-style: normal;
-    background-color: #e7e3d8;
-    color: #3a3a3a;
+
+/*card*/
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  width: 24rem;
+ }
+  
+  img {
+  border-bottom: 0.25rem solid rgb(145, 130, 180);
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: auto;
+  width: 100%;
+}
+  
+ @media screen and (min-width: 768px) {
+  img {
+    min-height: 15.5rem;
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  img {
+     min-height: 16.375rem;
+   }
+ }
+  
+.card-content {
+  padding: 1rem;
+}
+  
+.header,
+.subheader {
+  margin: 0;
+}
+
+ 
+.card-container { 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-wrap: balance;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+  
+ @media (max-width: 768px) {
+    .card {
+      flex: 1 0 calc(100% - 20px);
+    }
+}
+     
+  @media (min-width: 768px) {
+      .card {
+       flex: 1 0 calc(50% - 20px); /
+    }
+}
+     
+   @media (min-width: 1200px) {
+      .card {
+        flex: 1 0 calc(33% - 20px);
+    }
+}
+.button {
+  background-color: #a8a296;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 0;
+  transition: .4s;
+  position: relative;
+  color: white;
+}
+
+.button:hover {
+  background-color: #3a3a3a;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+
+ /*accordion*/
+ .accordion {
+    background-color:#e7e3d8;
+    color:  #3a3a3a;
     cursor: pointer;
-    padding: 12px;
+    padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border: 2px #281434;
     outline: none;
     transition: 0.4s;
-  }
-  
+    font-size: 16px;
+}
+      
+  #accordion h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0; 
+    padding: 10px; 
+    background-color: #e7e3d8;
+    color: #30202a;
+    font-family: "Albert San", serif;
+}
+      
+      
   .active, .accordion:hover {
-    background-color: #cdc9bf;
-  }
+    background-color: #a7a296;
+    border: 2px solid #b0ada6;
+    cursor: pointer;
+}
+      
   
   .panel {
-    padding: 0 18px;
-    background-color: #e7e3d8;
+    padding: 18px;
+    background-color: #cfcdc5;
     display: none;
     overflow: hidden;
-  }
-  
-  .button {
-    background-color: #a8a296;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 0;
-    transition: .4s;
-    position: relative;
-    color: white;
-  }
-  
-  .button:hover {
-    background-color: #3a3a3a;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-  }
+ }
   
 
-/*video*/
-/* Sections */
+ /*video*/
 .container {
     margin: 3rem auto;
     max-width: 75rem;
@@ -214,7 +230,6 @@
     position: relative;
   }
   
-  /* Section Header Content */
   .header-container {
     background-color: #e8bbef;
     text-align: center;
@@ -236,6 +251,25 @@
     height: 100%;
   }
 
+  #video-title h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0; 
+    padding: 10px; 
+    background-color: #f1e8d3;
+    color: #30202a;
+    font-family: "Albert San", serif;
+}
+#video-title p {
+  text-align: center;
+  font-size: 24px;
+  margin: 0; 
+  padding: 10px; 
+  background-color: #f1e8d3;
+  color: #30202a;
+  font-family: "Albert San", serif;
+}
+
 
   /*footer*/
 .footer-container {
@@ -248,11 +282,23 @@
   padding: 30px 0;
   font-size: 13px;
   line-height: 20px;
+  width: 100%;
+  bottom: 0;
+  color: rgba(114, 41, 114, 0.8);
+  padding: 100px 0 30px;
 }
 
 .footer-col {
   padding: 0 15px;
   text-align: center;
+}
+
+.footer-col iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
 }
 
 
@@ -277,11 +323,7 @@
   width: 50px;
 }
 
-.footer-col ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
