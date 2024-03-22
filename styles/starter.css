@@ -8,7 +8,7 @@
   }
   
   img {
-    border-bottom: 0.25rem solid rgb(241, 164, 220);
+    border-bottom: 0.25rem solid rgb(145, 130, 180);
     border-radius: 0.25rem 0.25rem 0 0;
     height: auto;
     width: 100%;
@@ -38,9 +38,8 @@
   
 /*hero*/
 .hero-container {
-    color:#e7e3d8;
+    color:rgb(139, 118, 144);
     height: 100vh;
-    box-sizing: border-box;
     position: relative;
   }
   
@@ -68,7 +67,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #381e3d;
   }
   
   .hero {
@@ -102,7 +101,6 @@
     font-family: "Madimi One", sans-serif;   
   font-weight: 400;   
   font-style: normal;
-    width: 1130px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -139,7 +137,7 @@
     background-color: #e7e3d8;
     color: #3a3a3a;
     cursor: pointer;
-    padding: 18px;
+    padding: 12px;
     width: 100%;
     text-align: left;
     border: none;
