@@ -305,6 +305,7 @@ font-style: normal;
 .footer-row {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 .footer-col h4 {
