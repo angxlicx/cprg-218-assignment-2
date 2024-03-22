@@ -302,6 +302,11 @@ font-style: normal;
   max-width: 100%;
 }
 
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-col h4 {
   font-size: 22px;
   color: #fff;
