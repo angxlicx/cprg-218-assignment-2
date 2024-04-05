@@ -20,13 +20,9 @@ function createCardElement(item) {
   function createCardElements(data) {
     return data.map(createCardElement).join("");
   }
-   
-  /**
-   * Fetch list of pokemon names and urls.
-   */
+ 
   async function fetch150PokemonList() {
     try {
-      // Get a list of Pokemon numbered 0-150
       const response = await fetch(
         "https://pokeapi.co/api/v2/pokemon?offset=0&limit=150"
       );
