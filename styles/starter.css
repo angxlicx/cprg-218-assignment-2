@@ -163,7 +163,7 @@ font-style: normal;
         flex: 1 0 calc(33% - 20px);
     }
 }
-.button {
+.shopbutton {
   background-color: #a8a296;
   text-decoration: none;
   border: 2px solid transparent;
@@ -178,7 +178,7 @@ font-style: normal;
   cursor: pointer;
 }
 
-.button:hover {
+.shopbutton:hover {
   background-color: #3a3a3a;
   border: 2px solid #ffffff;
   cursor: pointer;

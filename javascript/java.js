@@ -1,4 +1,4 @@
-//accordion
+/*accordion*/
 var acc = document.getElementsByClassName("accordion");
   var i;
   
@@ -21,7 +21,7 @@ var acc = document.getElementsByClassName("accordion");
     });
   }
 
-//footer copyright
+/*footer copyright*/
 document.addEventListener('DOMContentLoaded', function() {
   var currentYear = new Date().getFullYear();
   document.getElementById('copyright').innerHTML = '&copy; ' + currentYear + ' Lavender Vault Stationery. All rights reserved.';
