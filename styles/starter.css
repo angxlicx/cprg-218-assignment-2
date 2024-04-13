@@ -169,7 +169,7 @@ font-style: normal;
     }
 }
 .shopbutton {
-  background-color: #a8a296;
+  background-color: rgb(99, 96, 89);
   text-decoration: none;
   border: 2px solid transparent;
   padding: 13px 30px;
@@ -177,7 +177,7 @@ font-style: normal;
   transition: .4s;
   position: relative;
   color: white;
-  font-size: 1.2rem; 
+  font-size: 1.35rem; 
   border-radius: 5px; 
   border: none;
   cursor: pointer;
@@ -338,14 +338,14 @@ font-style: normal;
   flex-direction: column; 
   justify-content: space-around;
   align-items: center;
-  background-color: #bfbaad;
+  background-color: #8e8b81;
   color: #444242;
   padding: 30px 0;
   font-size: 13px;
   line-height: 20px;
   width: 100%;
   bottom: 0;
-  color: rgba(114, 41, 114, 0.8);
+  color: rgba(36, 13, 36, 0.8);
   padding: 100px 0 30px;
 }
 
@@ -370,7 +370,7 @@ font-style: normal;
 }
 
 .footer-col h4 {
-  font-size: 22px;
+  font-size: 27px;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -384,7 +384,7 @@ font-style: normal;
   left: 50%;
   bottom: -10px;
   transform: translateX(-50%);
-  background-color: #4a4345;
+  background-color: #150f10;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
